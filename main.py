@@ -8,7 +8,7 @@ from screen import Screen
 from players import Player
 pygame.mixer.init()
 #ЗАДАЧИ - ДОБАВИТЬ ФУНКЦИЮ ГЕЙМ ОВЕР (С ВЫВОДОМ ТОГО, КТО ПОБЕДИЛ) И ДОБАВТЬ ФУНКЦИЮ ПАУЗЫ
-music = random.choice(['pixelated-adventure_92830.mp3', 'pixelated-joyride_92775.mp3', 'vibrant-pixel-rush_92817.mp3', 'nostalgic-beats_92780.mp3'])
+music = random.choice(['sounds/pixelated-adventure_92830.mp3', 'sounds/pixelated-joyride_92775.mp3', 'sounds/vibrant-pixel-rush_92817.mp3', 'sounds/nostalgic-beats_92780.mp3'])
 pygame.mixer.music.load(music)
 pygame.mixer.music.play(-1)
 pygame.mixer.music.set_volume(0.3)

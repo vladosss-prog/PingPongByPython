@@ -5,7 +5,7 @@ from constants import  *
 
 pygame.init()
 pygame.mixer.init()
-bobma_s = random.choice(['bah1.mp3', 'bah2.mp3'])
+bobma_s = random.choice(['sounds/bah1.mp3', 'sounds/bah2.mp3'])
 bomba_sound = pygame.mixer.Sound(bobma_s)
 
 class Screen:
@@ -15,15 +15,15 @@ class Screen:
         self.length = length
         self.font = pygame.font.Font(None, 75)
         self.mines = []
-        self.bg = pygame.image.load("area.png")  # путь к файлу
+        self.bg = pygame.image.load("images/area.png")  # путь к файлу
         self.bg = pygame.transform.scale(self.bg, (length, height))  # подгоняем размер картинки под наш экран
-        self.paddle_png = pygame.image.load("rocket.png").convert_alpha()###
+        self.paddle_png = pygame.image.load("images/rocket.png").convert_alpha()###
         self.paddle_png = pygame.transform.scale(self.paddle_png, (100, paddle_height))###
-        self.ball_png = pygame.image.load("pong2.png").convert_alpha()
+        self.ball_png = pygame.image.load("images/pong2.png").convert_alpha()
         self.ball_png = pygame.transform.scale(self.ball_png, (50, 50))
-        self.bomb_png = pygame.image.load("bobma.png").convert_alpha()###
+        self.bomb_png = pygame.image.load("images/bobma.png").convert_alpha()###
         self.bomb_png = pygame.transform.scale(self.bomb_png, (100, 100))
-        self.exp_png = pygame.image.load("bomb.png").convert_alpha()
+        self.exp_png = pygame.image.load("images/bomb.png").convert_alpha()
         self.exp_png = pygame.transform.scale(self.exp_png, (100, 100))
         self.paused = False
 

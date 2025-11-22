@@ -14,20 +14,6 @@ class Player:
         self.screen_y = screen_y
         self.speed = speed
 
-
-    # def push(self, event):
-    #     if event.type == self.key_up and self.player.y >= 0: self.speed = -1
-    #     if event.type == self.key_down and self.player.y + self.paddle_h < 720: self.speed = 1
-
-    # def push(self, event):
-    #     if event.type == pygame.KEYDOWN: #Когда клавиша нажата
-    #         if event.key == self.key_up and self.player.y > 0:
-    #             self.speed = -1
-    #         elif event.key == self.key_down and self.player.y + self.paddle_h < self.screen_y:
-    #             self.speed = 1
-    #     if event.type == pygame.KEYUP:
-    #         self.speed = 0
-
     def push(self):
         keys = pygame.key.get_pressed()
         if keys[self.key_up] and self.player.y > 0:

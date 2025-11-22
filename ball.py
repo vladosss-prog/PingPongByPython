@@ -6,10 +6,10 @@ from players import Player
 from mine import Mine
 from screen import Screen
 pygame.mixer.init()
-colliderect_board = pygame.mixer.Sound('colliderect_board.mp3')
-colliderect_player = pygame.mixer.Sound('colliderect_player.mp3')
-rand_lose = random.choice(['miss1.mp3','miss2.mp3'])
-#rand_lose = random.choice(['pook.mp3'])
+colliderect_board = pygame.mixer.Sound('sounds/colliderect_board.mp3')
+colliderect_player = pygame.mixer.Sound('sounds/colliderect_player.mp3')
+rand_lose = random.choice(['sounds/miss1.mp3','sounds/miss2.mp3'])
+#rand_lose = random.choice(['sounds/pook.mp3'])
 lose = pygame.mixer.Sound(rand_lose)
 
 class Ball:
