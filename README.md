@@ -23,7 +23,7 @@
 1. Клонируй репозиторий:
     ```
     git clone https://github.com/vladosss-prog/PingPongByPython.git
-    cd Pong-Py
+    cd PingPongByPython
     ```
 2. Установи зависимости (если потребуется):
     ```
