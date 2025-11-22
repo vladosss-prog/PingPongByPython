@@ -31,9 +31,9 @@ class Player:
     def push(self):
         keys = pygame.key.get_pressed()
         if keys[self.key_up] and self.player.y > 0:
-            self.speed = -10
+            self.speed = -20
         elif keys[self.key_down] and self.player.y + self.player.height < self.screen_y:
-            self.speed = 10
+            self.speed = 20
         else:
             self.speed = 0
 

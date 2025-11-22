@@ -18,7 +18,7 @@ class Screen:
         self.bg = pygame.image.load("area.png")  # путь к файлу
         self.bg = pygame.transform.scale(self.bg, (length, height))  # подгоняем размер картинки под наш экран
         self.paddle_png = pygame.image.load("rocket.png").convert_alpha()###
-        self.paddle_png = pygame.transform.scale(self.paddle_png, (paddle_length, paddle_height))###
+        self.paddle_png = pygame.transform.scale(self.paddle_png, (100, paddle_height))###
         self.ball_png = pygame.image.load("pong2.png").convert_alpha()
         self.ball_png = pygame.transform.scale(self.ball_png, (50, 50))
         self.bomb_png = pygame.image.load("bobma.png").convert_alpha()###
