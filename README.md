@@ -22,7 +22,7 @@
 ## Установка
 1. Клонируй репозиторий:
     ```
-    git clone https://github.com/ваш_ник/Pong-Py.git
+    git clone https://github.com/vladosss-prog/Pong-Py.git
     cd Pong-Py
     ```
 2. Установи зависимости (если потребуется):
